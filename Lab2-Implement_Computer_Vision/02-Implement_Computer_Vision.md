@@ -133,7 +133,7 @@ var imageAnalysisResult = await VisionServiceHelper.AnalyzeImageAsync(imageStrea
 
 Now that we've called the Computer Vision service, we want to create an entry in "ImageInsights" with only the following results: ImageId, Caption, and Tags (you can confirm this by revisiting `ImageInsights.cs`).
 
-1. The following code below accomplishes this.
+1. The following code (added in ImageProcessor.cs during the previous steps) below accomplishes this.
 
 ```csharp
 ImageInsights result = new ImageInsights
